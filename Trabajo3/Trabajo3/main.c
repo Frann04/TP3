@@ -91,7 +91,7 @@ int main(void){
 	    
 }
 
-
+// Rutina de Servicio de Interrupcion por Timer1
 ISR(TIMER1_COMPA_vect){
 
 	flag_TIMER=1;

@@ -105,7 +105,7 @@
 
  uint8_t TWI_read(uint8_t ACK_NACK){
 	
-	TWCR = ((1 << TWINT) | (1 << TWEN) | (ACK_NACK << TWEA));
+	TWCR = ((1 << TWINT) | (1 << TWEN) | (ACK_NACK << TWEA)); // Configurar el registro de control TWI para iniciar la recepción del byte
 
 	while(!(TWCR & (1<<TWINT)));
 	return TWDR;
